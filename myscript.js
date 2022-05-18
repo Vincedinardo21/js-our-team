@@ -45,9 +45,10 @@ const card = [
 for(i = 0; i < card.length; i++){
     
     let objIesimo  = card[i];
+    let myContent = document.createElement("div");
+    myContent.classList.add(".team-card");
     for(var chiave in objIesimo){
-        let myContent = document.createElement("div");
-        myContent.classList.add(".team-card");
+        
         myContent.append(objIesimo[chiave]);
         myContainer.append(myContent);
         console.log(chiave + " : " + objIesimo[chiave]);
